@@ -1,96 +1,297 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Rincones de nustro Mundo</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-
-    <header>
-        <figure>
-            <img src="imgs/LogoRinconesDeNuestroMundo.png" alt="mapamundi con un avión alrededor y la leyenda del nombre de la empresa: Rincones de Nuestro Mundo">
-        </figure>
-
-        <h1>Rincones de Nuestro Mundo</h1>
-    </header>
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Noelia Camelia" />
+    <meta name="description" content="Blog sobre viajes" />
+    <meta name="keywords" content="Viajes, Vacaciones" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Iconos de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Titulo -->
+    <title>Rincones de nuestro Mundo</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imgs/camera.svg" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="imgs/LogoRinconesDeNuestroMundo.png"
+            width="70"
+            alt="logo: mapamundi con un avión alrededor y la leyenda del nombre de la empresa: Rincones de Nuestro Mundo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <div class="navbar-text d-flex justify-content-end">
+            <ul
+              class="navbar-nav d-flex justify-content-end align-items-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Travels</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <main>
-        <section class="vertical-cards">
-            <ul>
-                <li>
-                    <article>
-                        <figure>
-                            <img src="imgs/glaciarPeritoMoreno.JPG" alt="Glaciar Perito Moreno - El Calafate, Argentina"/>
-                        </figure>
-                        <h2>Naturaleza</h2>
-                        <p>Texto resumido de algo</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <figure>
-                            <img src="imgs/cristoRedentor.JPG" alt="Cristo Redentor - Río de Janeiro, Brasil"/>                            
-                        </figure>
-                        <h2>Ciudades</h2>
-                        <p>Texto resumido de algo</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <figure>
-                            <img src="imgs/hotelAllInclusive.JPG" alt="Piscina del Hotel Grand Palladium Punta Cana Resort & Spa - Punta Cana, República Dominicana"/>
-                        </figure>
-                        <h2>Descanso</h2>
-                        <p>Texto resumido de algo</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
+      <!-- Seccion Hero -->
+      <div class="container col-xxl-8 px-4 py-5" bis_skin_checked="1">
+        <div
+          class="row flex-lg-row align-items-center g-5 py-5"
+          bis_skin_checked="1"
+        >
+          <div class="hero-principal col-lg-6" bis_skin_checked="1">
+            <h1
+              class="display-5 fw-bold text-body-emphasis lh-1 mb-3"
+              id="title"
+            >
+              Rincones de Nuestro Mundo
+            </h1>
+            <h2 class="lead">
+              Contenido sobre viajes y mis fotografías en ellos
+            </h2>
+            <p class="h6">
+              Podrás encontrar info sobre los itinerarios de viajes que he
+              realizado, la forma de llegar que he utilizado en cada uno,
+              fotografías sobre los lugares y un análisis sobre la cantidad de
+              tiempo invertida en cada uno de ellos
+            </p>
+          </div>
+          <div class="col-md-12 col-lg-6" bis_skin_checked="1">
+            <img
+              src="./imgs/Me.JPG"
+              class="d-block mx-lg-auto img-fluid rounded justify-content-center"
+              alt="fotografía de Noelia Camelia, creadora de la página, en los Picos de Europa"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
 
-        <section class="horizontal-cards">
-            <h2>Maneras de viajar</h2>
-            <ul>
-                <li>
-                    <figure>
-                        <img src="imgs/1.png" alt="esquema de un barco"/>
-                    </figure>
-                    <h3>Viaje en barco</h3>
-                    <p>Las opciones para viajes en barco pueden ser: Argentina en Ferry (Colonia Express o Buquebus) o cruceros que van a Argentina, Brasil o incluso a Europa</p>
-                </li>
-                <li>
-                    <figure>
-                        <img src="imgs/2.png" alt="Esquema de un auto">
-                    </figure>
-                    <h3>Viaje en auto u omnibus</h3>
-                    <p>Para esta categoría son infinitas las opciones, desde viajes cortos como recorrer Uruguay, o viajes internacionales a Argentina, Brasil o Paraguay. También se pueden realizar viajes más extensos.</p>
-                </li>
-                <li>
-                    <figure>
-                        <img src="imgs/3.png" alt="Esquema de un avión">
-                    </figure>
-                    <h3>Viaje en avión</h3>
-                    <p>El avión es el medio de transporte más habitual para los viajes internacionales en los cuales las distancias recorridas para llegar es muy larga</p>
-                </li>
-            </ul>
-        </section>
+      <!-- vertical-cards -->
+      <div class="album py-5 bg-body-tertiary" bis_skin_checked="1">
+        <div class="container" bis_skin_checked="1">
+          <div class="row" bis_skin_checked="1">
+            <div class="col-sm-12 col-md-4" bis_skin_checked="1">
+              <div class="card shadow-sm mb-2" bis_skin_checked="1">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  src="imgs/glaciarPeritoMoreno.JPG"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                />
+                <div class="card-body" bis_skin_checked="1">
+                  <h3 class="card-title">Naturaleza</h3>
+                  <p class="card-text">
+                    ¿Te imaginas caminando por la inmensidad de un glaciar? O
+                    simplemente observar desde un barco o un terreno firme
+                    cercano..
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4" bis_skin_checked="1">
+              <div class="card shadow-sm mb-2" bis_skin_checked="1">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  src="imgs/angkorWat.JPG"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                />
+                <div class="card-body" bis_skin_checked="1">
+                  <h3 class="card-title">Ciudades</h3>
+                  <p class="card-text">
+                    ¿Alguna vez pensaste que podías pisar esos templos que
+                    tantas fotos o documentales viste? Ciudades que tienen tanto
+                    para contar...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4" bis_skin_checked="1">
+              <div class="card shadow-sm mb-2" bis_skin_checked="1">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  src="imgs/hotelAllInclusive.JPG"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                />
+                <div class="card-body" bis_skin_checked="1">
+                  <h3 class="card-title">Descanso</h3>
+                  <p class="card-text">
+                    Quizás, simplemente quieras descansar y relajarte en aguas
+                    termales en un entorno natural y tranquilo, sin preocuparte
+                    por nada..
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    </main>
+      <!-- Section photo completa -->
+      <!-- <img
+        class="img-fluid"
+        src="imgs/glaciarPeritoMoreno.JPG"
+        alt="Glaciar Perito Moreno - El Calafate, Argentina"
+      /> -->
 
-    <footer>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/rincones_de_nuestro_mundo/" class="instagram">instagram</a>
-            </li>
-            <li>
-                <a href="http://linkedin.com" class="linkedin">linkedin</a>
-            </li>
+      <section class="horizontal-cards text-center">
+        <h3 class="card-title  py-3">Maneras de viajar</h3>
+        <ul class="d-flex justify-content-center flex-wrap p-0">
+          <li class="card shadow-sm m-3" style="max-width: 540px">
+            <div class="row g-0">
+              <figure class="col-sm-4 p-3">
+                <img
+                  src="imgs/1.png"
+                  alt="esquema de un barco"
+                  class="img-fluid rounded-start"
+                />
+              </figure>
+              <div class="col-sm-8 text-start">
+                <div class="card-body">
+                  <h3>Viaje en barco</h3>
+                  <p>
+                    Las opciones para viajes en barco pueden ser: Argentina en
+                    Ferry (Colonia Express o Buquebus) o cruceros que van a
+                    Argentina, Brasil o incluso a Europa
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="card shadow-sm m-3" style="max-width: 540px">
+            <div class="row g-0">
+              <figure class="col-sm-4 p-3">
+                <img src="imgs/2.png" alt="Esquema de un auto" class="img-fluid rounded-start" />
+              </figure>
+              <div class="col-sm-8 text-start">
+                <div class="card-body">
+                  <h3>Viaje en auto o autobus</h3>
+                  <p>
+                    Para esta categoría son infinitas las opciones, desde viajes
+                    cortos como recorrer Uruguay, o viajes internacionales a
+                    Argentina, Brasil o Paraguay. También se pueden realizar viajes
+                    más extensos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="card shadow-sm m-3" style="max-width: 540px">
+            <div class="row g-0">
+            <figure class="col-sm-4 p-3">
+              <img src="imgs/3.png" alt="Esquema de un avión" class="img-fluid rounded-start" />
+            </figure>
+            <div class="col-sm-8 text-start">
+              <div class="card-body">
+            <h3>Viaje en avión</h3>
+            <p>
+              El avión es el medio de transporte más habitual para los viajes
+              internacionales en los cuales las distancias recorridas para
+              llegar es muy larga
+            </p>
+          </div>
+        </div>
+          </div>
+          </li>
         </ul>
-    </footer>
+      </section>
 
+    <!-- Footer -->
+    <div class="container" bis_skin_checked="1">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center" bis_skin_checked="1">
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >2024 Noelia Camelia</span
+          >
+        </div>
 
-</body>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.instagram.com/rincones_de_nuestro_mundo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.linkedin.com/in/noelia-camelia-acosta/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
